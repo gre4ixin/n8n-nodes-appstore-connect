@@ -4,7 +4,7 @@ An [n8n](https://n8n.io) community node for the [Apple App Store Connect API](ht
 
 Automate app management, TestFlight beta testing, customer review responses, and sales reporting from your n8n workflows.
 
-[![npm](https://img.shields.io/npm/v/n8n-nodes-appstore-connect)](https://www.npmjs.com/package/n8n-nodes-appstore-connect)
+[![npm](https://img.shields.io/npm/v/@gre4ixin/n8n-nodes-appstore-connect)](https://www.npmjs.com/package/@gre4ixin/n8n-nodes-appstore-connect)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -28,13 +28,13 @@ Automate app management, TestFlight beta testing, customer review responses, and
 Go to **Settings > Community Nodes** and install:
 
 ```
-n8n-nodes-appstore-connect
+@gre4ixin/n8n-nodes-appstore-connect
 ```
 
 ### Self-hosted (npm)
 
 ```bash
-npm install n8n-nodes-appstore-connect
+npm install @gre4ixin/n8n-nodes-appstore-connect
 ```
 
 ---
@@ -51,7 +51,20 @@ This node uses **App Store Connect API Keys** (JWT-based authentication with ES2
 4. In n8n, create a new **App Store Connect API** credential:
    - **Issuer ID**: from step 3
    - **Key ID**: from step 3
-   - **Private Key**: paste the **full contents** of your `.p8` file, including the `-----BEGIN PRIVATE KEY-----` header and `-----END PRIVATE KEY-----` footer, with all line breaks preserved
+   - **Private Key**: paste the **full contents** of your `.p8` file, including the `-----BEGIN PRIVATE KEY-----` header and `-----END PRIVATE KEY-----` footer
+
+**Tip — copy .p8 contents to clipboard in one command:**
+
+```bash
+# macOS
+cat AuthKey_XXXXXXXXXX.p8 | pbcopy
+
+# Linux
+cat AuthKey_XXXXXXXXXX.p8 | xclip -selection clipboard
+
+# Windows (PowerShell)
+Get-Content AuthKey_XXXXXXXXXX.p8 | Set-Clipboard
+```
 
 ### Required API Key Roles
 
@@ -145,7 +158,7 @@ npm run lint
 # Test locally with n8n
 npm link
 cd ~/.n8n/nodes
-npm link n8n-nodes-appstore-connect
+npm link @gre4ixin/n8n-nodes-appstore-connect
 npx n8n start
 ```
 
