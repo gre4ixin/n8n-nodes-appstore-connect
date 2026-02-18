@@ -1,0 +1,65 @@
+{
+  "name": "n8n-nodes-appstoreconnect",
+  "version": "0.1.0",
+  "description": "n8n community node for Apple App Store Connect API — manage apps, TestFlight, reviews, and sales reports",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "apple",
+    "app-store",
+    "app-store-connect",
+    "testflight",
+    "ios",
+    "macos"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/YOUR_USERNAME/n8n-nodes-appstoreconnect",
+  "author": {
+    "name": "YOUR_NAME",
+    "email": "YOUR_EMAIL"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/n8n-nodes-appstoreconnect.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "format": "prettier --write \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/AppStoreConnectApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/AppStoreConnect/AppStoreConnect.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^18.0.0",
+    "eslint": "^9.0.0",
+    "n8n-workflow": "*",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.10",
+    "npm": ">=8.19.0"
+  }
+}
