@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-appstoreconnect",
+  "name": "n8n-nodes-appstore-connect",
   "version": "0.1.0",
   "description": "n8n community node for Apple App Store Connect API — manage apps, TestFlight, reviews, and sales reports",
   "keywords": [
@@ -13,14 +13,14 @@
     "macos"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/YOUR_USERNAME/n8n-nodes-appstoreconnect",
+  "homepage": "https://github.com/gre4ixin/n8n-nodes-appstore-connect",
   "author": {
-    "name": "YOUR_NAME",
-    "email": "YOUR_EMAIL"
+    "name": "Pavel",
+    "email": "t.me/gre4ixin"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/n8n-nodes-appstoreconnect.git"
+    "url": "https://github.com/gre4ixin/n8n-nodes-appstore-connect.git"
   },
   "main": "index.js",
   "scripts": {

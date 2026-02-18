@@ -4,7 +4,7 @@ An [n8n](https://n8n.io) community node for the [Apple App Store Connect API](ht
 
 Automate app management, TestFlight beta testing, customer review responses, and sales reporting from your n8n workflows.
 
-[![npm](https://img.shields.io/npm/v/n8n-nodes-appstoreconnect)](https://www.npmjs.com/package/n8n-nodes-appstoreconnect)
+[![npm](https://img.shields.io/npm/v/n8n-nodes-appstore-connect)](https://www.npmjs.com/package/n8n-nodes-appstore-connect)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -28,13 +28,13 @@ Automate app management, TestFlight beta testing, customer review responses, and
 Go to **Settings > Community Nodes** and install:
 
 ```
-n8n-nodes-appstoreconnect
+n8n-nodes-appstore-connect
 ```
 
 ### Self-hosted (npm)
 
 ```bash
-npm install n8n-nodes-appstoreconnect
+npm install n8n-nodes-appstore-connect
 ```
 
 ---
@@ -123,7 +123,7 @@ Schedule Trigger (every 5 minutes)
 - [n8n Community Nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 - [App Store Connect API documentation](https://developer.apple.com/documentation/appstoreconnectapi)
 - [Generating tokens for API requests](https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests)
-- [Report an issue](https://github.com/YOUR_USERNAME/n8n-nodes-appstoreconnect/issues)
+- [Report an issue](https://github.com/gre4ixin/n8n-nodes-appstore-connect/issues)
 
 ---
 
@@ -145,7 +145,7 @@ npm run lint
 # Test locally with n8n
 npm link
 cd ~/.n8n/nodes
-npm link n8n-nodes-appstoreconnect
+npm link n8n-nodes-appstore-connect
 npx n8n start
 ```
 
