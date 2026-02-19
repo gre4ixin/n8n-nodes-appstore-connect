@@ -42,7 +42,11 @@ export class AppStoreConnectApi implements ICredentialType {
 			required: true,
 			placeholder: '-----BEGIN PRIVATE KEY-----\nMIGH...\n-----END PRIVATE KEY-----',
 			description:
-				'Paste the full contents of your .p8 file, including the "-----BEGIN PRIVATE KEY-----" header and footer lines with all line breaks preserved. This file can only be downloaded once from App Store Connect.',
+				'Paste the full contents of your .p8 file, including the BEGIN/END header lines. ' +
+				'<b>macOS:</b> <code>cat AuthKey_XXXXXXXXXX.p8 | pbcopy</code> — then paste here. ' +
+				'<b>Linux:</b> <code>cat AuthKey_XXXXXXXXXX.p8 | xclip -selection clipboard</code>. ' +
+				'<b>Windows (PowerShell):</b> <code>Get-Content AuthKey_XXXXXXXXXX.p8 | Set-Clipboard</code>. ' +
+				'This file can only be downloaded once from App Store Connect.',
 		},
 	];
 }
