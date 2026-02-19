@@ -1,4 +1,4 @@
-# n8n-nodes-appstoreconnect
+# n8n-nodes-appstore-connect
 
 An [n8n](https://n8n.io) community node for the [Apple App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi).
 
